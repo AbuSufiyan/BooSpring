@@ -5,3 +5,13 @@
   Last name: <input type="text" name="lname"><br>
   <input type="submit" value="Submit">
 </form>
+
+<table>	
+#foreach ($user in $users)
+<tr>        
+<td align="center">$user.fName</td>
+<td align="left">$user.lName</td>
+</tr>
+    #end
+
+</table>	
